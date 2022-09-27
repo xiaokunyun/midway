@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: 16
+        node-version:  [14.x, 16.x, 18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
     - uses: actions/checkout@v3
@@ -25,3 +25,8 @@ jobs:
     - run: npm install
     - run: npm run build
     - run: npm prune --production
+    - name: Node.js CI
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
