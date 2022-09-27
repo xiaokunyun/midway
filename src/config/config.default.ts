@@ -21,7 +21,7 @@ export default {
         username: 'root', // 数据库用户名
         password: 'root', // 数据库密码
         database: 'midway', // 数据表
-        synchronize: false, // 如果第一次使用，不存在表，有同步的需求可以写 true
+        synchronize: true, // 如果第一次使用，不存在表，有同步的需求可以写 true
         logging: false,
 
         // 配置实体模型
@@ -29,5 +29,9 @@ export default {
         timezone: '+08:00',
       },
     },
+  },
+  jwt: {
+    secret: 'xxxxxxxxxxxxxx', // fs.readFileSync('xxxxx.key')
+    expiresIn: '2d', // https://github.com/vercel/ms
   },
 } as MidwayConfig;

@@ -1,8 +1,7 @@
 import { Provide } from '@midwayjs/decorator';
 import { IUserOptions } from '../interface';
-
 import { InjectEntityModel } from '@midwayjs/typeorm';
-import { Photo, UserModel } from '../entity/photo';
+import { Photo } from '../entity/photo';
 import { Repository } from 'typeorm';
 @Provide()
 export class UserService {
@@ -17,7 +16,6 @@ export class UserService {
   @InjectEntityModel(Photo) photoModel: Repository<Photo>;
   // save
   async savePhoto() {
-    // create a entity object
     const photo = new Photo();
     photo.name = 'Me and Bears';
     photo.description = 'I am near polar bears';
@@ -28,15 +26,5 @@ export class UserService {
     const photoResult = await this.photoModel.save(photo);
     // save success
     console.log('photo id = ', photoResult.id);
-  }
-  @InjectEntityModel(UserModel) userModel: Repository<UserModel>;
-  // save
-  async addUser() {
-    const record = new UserModel();
-    record.userName = 'migor';
-    record.age = 18;
-    record.description = 'test';
-    const created = await this.userModel.save(record);
-    console.log('record id = ', created.id);
   }
 }

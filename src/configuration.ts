@@ -5,6 +5,8 @@ import * as info from '@midwayjs/info';
 import * as orm from '@midwayjs/typeorm';
 import * as swagger from '@midwayjs/swagger';
 import * as view from '@midwayjs/view-nunjucks';
+// import { IMidwayContainer } from '@midwayjs/core';
+// import * as jwt from '@midwayjs/jwt';
 import { join } from 'path';
 // import { DefaultErrorFilter } from './filter/default.filter';
 // import { NotFoundFilter } from './filter/notfound.filter';
@@ -25,13 +27,13 @@ import { WeatherErrorFilter } from './filter/weather.filter';
       component: swagger,
       enabledEnvironment: ['local'],
     },
+    // jwt,
   ],
   importConfigs: [join(__dirname, './config')],
 })
 export class ContainerLifeCycle {
   @App()
   app: koa.Application;
-
   async onReady() {
     // add middleware
     this.app.useMiddleware([ReportMiddleware]);
@@ -40,3 +42,14 @@ export class ContainerLifeCycle {
     this.app.useFilter([WeatherErrorFilter]);
   }
 }
+// export class MainConfiguration {
+//   @App()
+//   app: koa.Application;
+//   async onReady(applicationContext: IMidwayContainer): Promise<void> {
+//     // 添加中间件
+//     this.app.useMiddleware([
+//       // ...
+//       JwtMiddleware,
+//     ]);
+//   }
+// }
