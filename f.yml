@@ -1,0 +1,15 @@
+ # Midway Serverless 部署配置文件
+service: my-koa-demo       ## 发布到云平台的应用名
+
+provider:
+  name: aliyun             ## 发布的云平台，aliyun，tencent 等
+
+deployType: koa            ## 部署的应用类型
+version: 3.0.0
+# package:
+#   exclude:
+#     - package-lock.json    ## 忽略 package-lock.json 文件
+
+# custom:
+#   customDomain:
+#     domainName: auto       ## 自动生成域名
