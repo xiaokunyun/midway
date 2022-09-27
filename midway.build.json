@@ -1,0 +1,92 @@
+{
+  "features": {
+    "tsc": true
+  },
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "inlineSourceMap": true,
+    "inlineSources": false,
+    "sourceRoot": "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\src",
+    "outDir": "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist",
+    "rootDir": "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\src",
+    "listEmittedFiles": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "stripInternal": true,
+    "skipLibCheck": true,
+    "pretty": true,
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": [
+      "./typings",
+      "./node_modules/@types"
+    ]
+  },
+  "include": [
+    "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\src"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "test"
+  ],
+  "compileOnSave": true,
+  "build": {
+    "inputFiles": [
+      "C:/Users/xuxiaokun/Desktop/AKUN/git/midway/src/configuration.ts",
+      "C:/Users/xuxiaokun/Desktop/AKUN/git/midway/src/interface.ts",
+      "C:/Users/xuxiaokun/Desktop/AKUN/git/midway/src/config/config.default.ts",
+      "C:/Users/xuxiaokun/Desktop/AKUN/git/midway/src/controller/api.controller.ts",
+      "C:/Users/xuxiaokun/Desktop/AKUN/git/midway/src/controller/home.controller.ts",
+      "C:/Users/xuxiaokun/Desktop/AKUN/git/midway/src/controller/user.ts",
+      "C:/Users/xuxiaokun/Desktop/AKUN/git/midway/src/entity/photo.ts",
+      "C:/Users/xuxiaokun/Desktop/AKUN/git/midway/src/error/weather.error.ts",
+      "C:/Users/xuxiaokun/Desktop/AKUN/git/midway/src/filter/default.filter.ts",
+      "C:/Users/xuxiaokun/Desktop/AKUN/git/midway/src/filter/notfound.filter.ts",
+      "C:/Users/xuxiaokun/Desktop/AKUN/git/midway/src/filter/weather.filter.ts",
+      "C:/Users/xuxiaokun/Desktop/AKUN/git/midway/src/middleware/report.middleware.ts",
+      "C:/Users/xuxiaokun/Desktop/AKUN/git/midway/src/service/user.service.ts",
+      "C:/Users/xuxiaokun/Desktop/AKUN/git/midway/src/service/weather.service.ts"
+    ],
+    "outputFiles": [
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\middleware\\report.middleware.js",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\middleware\\report.middleware.d.ts",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\error\\weather.error.js",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\error\\weather.error.d.ts",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\filter\\weather.filter.js",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\filter\\weather.filter.d.ts",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\configuration.js",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\configuration.d.ts",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\interface.js",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\interface.d.ts",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\entity\\photo.js",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\entity\\photo.d.ts",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\config\\config.default.js",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\config\\config.default.d.ts",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\service\\user.service.js",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\service\\user.service.d.ts",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\controller\\api.controller.js",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\controller\\api.controller.d.ts",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\service\\weather.service.js",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\service\\weather.service.d.ts",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\controller\\home.controller.js",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\controller\\home.controller.d.ts",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\controller\\user.js",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\controller\\user.d.ts",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\filter\\default.filter.js",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\filter\\default.filter.d.ts",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\filter\\notfound.filter.js",
+      "C:\\Users\\xuxiaokun\\Desktop\\AKUN\\git\\midway\\dist\\filter\\notfound.filter.d.ts"
+    ]
+  },
+  "versions": {
+    "mwcc": "0.8.0",
+    "typescript": "4.6.4"
+  }
+}
